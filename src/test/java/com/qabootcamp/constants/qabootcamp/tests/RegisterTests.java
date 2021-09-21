@@ -21,6 +21,11 @@ public class RegisterTests extends BaseTest{
 
         driver.findElement(By.xpath("//*[@id=\"mat-select-value-3\"]/span")).click();
 
+        driver.findElement(By.xpath("//*[@id=\"mat-option-4\"]/span")).click();
+
+        driver.findElement(By.xpath("Test")).sendKeys("Test");
+
+
 
 
         Thread.sleep(1000);
