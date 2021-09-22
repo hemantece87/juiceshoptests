@@ -23,14 +23,14 @@ public class RegisterPage {
         PageFactory.initElements(driver, this);
     }
 
-    public LoginPage registerUser(String email_add, String password_add) {
+    public LoginPage registerUser(String email_add, String passwordValue) {
 
         WaitUtils.waitForElementToBeClickable(driver, driver.findElement(newCustomerLink));
 
         driver.findElement(newCustomerLink).click();
         driver.findElement(email).sendKeys(email_add);
-        driver.findElement(password).sendKeys(password_add);
-        driver.findElement(repeatPassword).sendKeys(password_add);
+        driver.findElement(password).sendKeys(passwordValue);
+        driver.findElement(repeatPassword).sendKeys(passwordValue);
         driver.findElement(openDropDown).click();
         driver.findElement(selectOption).click();
         driver.findElement(securityAnswer).sendKeys("Test");
